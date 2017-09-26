@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Deep Dive Consulting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="sticky-footer.css" rel="stylesheet">
+  <script src="jquery.js"></script>
+  <script type="text/javascript" src="smoothscroll.js"></script>
+  <link rel="icon" href="translogo.png" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color:#ffffff">
+
+  <header style="margin-bottom:-10px; background-color:#f3f4f5;padding-top:10px;padding-bottom:10px;">
+  <h1 align="center">Deep Dive Consulting</h1>
+  <p align="center">Experts in Project Controls, Commercial Management and Financial Analysis</p>
+</header>
+
+<div class="nav-wrapper-cont">
+<div id="mynav"class="nav navbar-fixed" style="background-color: #fff; margin-bottom:-100px; padding-top:10px; padding-left:150px;padding-right:150px;" data-spy="affix" data-offset-top="110">
+  <div class="row row-no-padding" style="margin-bottom:-50px">
+    <div class="col-xs-5" style="margin-bottom:-60px">
+      <a href="deepdiveconsulting.html" style="padding-left:20px;"><img src="translogo.png" alt="BMCL" width="140" height="100"></a>
+      <p id="myP">A 360&deg; business review</p>
+    </div>
+  </div>
+
+
+  <div class="row row-no-padding" style="margin-top:-80px; margin-bottom:-50px">
+      <div align="right">
+      <nav class="navbar navbar-default" style="background-color:#ffffff;">
+        <div class="container-fluid">
+
+          <ul class="nav navbar-nav navbar-right" style="margin-bottom:-50px;background-color:#fff">
+            <li class="highlight"><a href="#about" class="smoothScroll">About</a></li>
+            <li class="highlight"><a href="#approach" class="smoothScroll">Approach</a></li>
+            <li class="highlight"><a href="#services" class="smoothScroll">Services</a></li>
+            <li class="highlight"><a href="#projects" class="smoothScroll">Projects</a></li>
+            <li class="highlight"><a href="#clients" class="smoothScroll">Clients</a></li>
+            <li class="highlight"><a href="#contact" class="smoothScroll">Contact us</a></li>
+            <li class="highlight"> <a href="#"> <img src="thickicon.png" alt="Search" width="24px" height="24px" onclick="unhide()"> </a> </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12" style="margin-top:-20px;">
+      <div id="open" align="right" style="padding-right:20px; display:none;">
+      <form>
+        <input type="search" name="search" placeholder="Search.."></input>
+      </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<br><br>
+<div class="container">
+<div class="col-xs-6">
+<h4 style="text-color:#000">ANY QUERIES? PLEASE SEND US A MESSAGE.</h4>
+<br>
+<h4 class="redtext">NAME:*</h4>
+<form style="padding-bottom:5px" action="cgi-bin/FormalMail.pl" method="post">
+  <input class="form-control" style="width:50%" type="text" placeholder="First Name"/ >
+</form>
+<form style="padding-bottom:5px">
+  <input class="form-control" style="width:50%" type="text" placeholder="Last Name">
+</form>
+<h4 class="redtext" style="padding-top:15px">EMAIL:*</h4>
+<form style="padding-bottom:5px">
+  <input class="form-control" style="width:70%" type="text" placeholder="example@domain.com">
+  <input type="hidden" name="recipient" value=" lekhprakash.bhagawan-cic-uk@ibm.com, lekhprakash.bhagawan-cic-uk@ibm.com" / >
+</form>
+<h4 class="redtext" style="padding-top:15px">SUBJECT:*</h4>
+<form style="padding-bottom:5px">
+  <input class="form-control" style="width:70%" type="text" placeholder="Enter the subject here...">
+</form>
+
+<h4 class="redtext" style="padding-top:15px">MESSAGE:*</h4>
+
+<form style="padding-bottom:5px">
+  <textarea class="form-control" rows="5" id="comment" placeholder="Enter the message in this box..."></textarea>
+</form>
+  <div style="padding-top:5px">
+    <form action="contact.html">
+        <input class="btn btn-primary" type="submit" value="Submit" />
+    </form>
+  </div>
+</div>
+
+<div class="col-xs-6">
+  <h4 style="text-color:#000">WHERE TO FIND US:</h4><br>
+
+  <div id="map"></div>
+  <script>
+        function initMap() {
+          var uluru = {lat: 54.908033, lng: -2.813874};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <div style="padding-top:5px">
+        <form action="https://www.google.co.uk/maps/place/73+Hurley+Rd,+Carlisle+CA4+8QY/@54.9080951,-2.8162199,17z/data=!3m1!4b1!4m5!3m4!1s0x487d0547123d1693:0x49db569993ccf574!8m2!3d54.9080951!4d-2.8140312">
+            <input class="btn btn-primary" type="submit" value="Get directions" />
+        </form>
+      </div>
+</div>
+
+</div>
+
+<br>
+<br>
+
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUie-B4bsc1vJiTUv050kHI5J5KxCGSxE&callback=initMap">
+    </script>
+
+    <footer class="footer" style="padding-top:10px; visibility:hidden;" id="myfooter" >
+      <div class="container">
+        <span class="text-muted">CONTACT US
+T: +44 (0)7909674277 <br>
+ pra<a class="bluetext">deep</a>@deepdiveconsulting.co.uk <br>
+Copyright  - All rights reserved.</span>
+      </div>
+    </footer>
+    <br><br>
+
+
+<br>
+<br>
+<footer class="footer" style="padding-top:10px; visibility:hidden;" id="myfooter" >
+  <div style="background-color:#fff">
+    <span class="text-muted">CONTACT US
+T: +44 (0)7909674277 <br>
+pra<a class="bluetext">deep</a>@deepdiveconsulting.co.uk <br>
+Copyright  - All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
