@@ -1,3 +1,8 @@
+$('footer').click(function(e) {
+  e.preventDefault();
+  $('footer .wrap').toggleClass('active');
+});
+
 window.onscroll = function() {footerfunc()};
 
 function footerfunc() {

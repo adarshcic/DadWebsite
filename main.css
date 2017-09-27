@@ -27,7 +27,7 @@ background-color: #ffffff;
 }
 html, body {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-family:monospace;
   height: 100%;
 }
@@ -82,9 +82,6 @@ input[type=search]:focus {
   padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
 
-#myfooter{
-
-}
 
 .footer {
    position: fixed;
@@ -98,11 +95,33 @@ input[type=search]:focus {
    padding-right: 0px;
 }
 
+.wrap {
+  width: 90%;
+  margin: 25px auto 150px;
+  -moz-transition: max-height 0.8s ease-in-out;
+  -o-transition: max-height 0.8s ease-in-out;
+  -webkit-transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.8s ease-in-out;
+}
+footer .wrap {
+  overflow: hidden;
+  margin: 25px auto;
+  max-height: 50px;
+}
+footer .wrap.active {
+  overflow: scroll;
+  max-height: 200px;
+}
+
+
 .bluetext{
   color:blue;
 }
 .redtext{
   color:#b83015;
+}
+.black{
+  color:black;
 }
 
 .jumbotron:hover{
@@ -157,4 +176,45 @@ textarea{
     width: 1px;
     min-width: 100px;
     background: black;
+}
+
+hr{
+  color: black;
+  margin: 0px;
+}
+
+#fbchange{
+  background-image: url('fb_grey.png');
+  background-size: 48px 48px;
+  width: 48px;
+  height:48px;
+}
+
+#fbchange:hover{
+  background-image: url('fb_blue.png');
+  background-size: 48px 48px;
+}
+
+#twitterchange{
+  background-image: url('twitter_grey.png');
+  background-size: 48px 48px;
+  width: 48px;
+  height:48px;
+}
+
+#twitterchange:hover{
+  background-image: url('twitter_blue.png');
+  background-size: 48px 48px;
+}
+
+#linkedchange{
+  background-image: url('linked_grey.png');
+  background-size: 48px 48px;
+  width: 48px;
+  height:48px;
+}
+
+#linkedchange:hover{
+  background-image: url('linked_blue.png');
+  background-size: 48px 48px;
 }
