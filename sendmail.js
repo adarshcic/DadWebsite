@@ -9,9 +9,8 @@ var transporter = nodemailer.createTransport({
       user:'adarsh95.ab@gmail.com',
       clientId: '864851092369-4ti4k7jbtuj28hqijht60v9npd3q5gqa.apps.googleusercontent.com',
       clientSecret: 'X2YyEq1NChvSqKNmlj5opLEa',
-      refreshToken: '1/n6H5mO8QzmTL58DJ-VIkfq1Gi7YIh80hLGuRUAIGNDQ',
-      accessToken: 'ya29.GlvSBAl3wasvP7--UqmTgP2rzY7wmuaq2u6QwVAs-3JPRnyniv6LGF8UWzcDR9VOzIm0vQxZNpPgVGPxlbEtEeOjmEvrCdSibg85EUrhOGpcW_o1MLK7xIVExFu9',
-
+      refreshToken: '1/sMbYHWBk3ktu4MotLqG8QNBXB6-4e01OS8ZNYwvfvhI',
+      accessToken: 'ya29.GlvTBGRWkH9NSyCpjAijHBvBi3psNoOphnhGXVi2EgtiEWjiSYZbLP3D34XdjaBxnIQoxCYG2vY3x7aUn4SP20Rw4whIuv7KX3Lo7k9prsBnG9cLKW--R7R5AfDL',
   }
 });
 

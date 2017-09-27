@@ -152,3 +152,9 @@ textarea{
 #navcolor{
   background-color: #116373;
 }
+
+#horizontal-line {
+    width: 1px;
+    min-width: 100px;
+    background: black;
+}
