@@ -7,5 +7,8 @@ $(function(){
        console.log(data);
        alert('executed');
     }
+    error: function(){
+      alert('what am i doing? I have no idea');
+    }
   });
 });
