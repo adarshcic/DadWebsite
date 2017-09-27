@@ -1,31 +1,21 @@
-var app = module.exports = require('appjs');
+//declare global variables
+var express = require('express');
+var nodemailer = require('nodemailer');
+var fs = require('fs');
+var path = require('path');
+var app = express();
+var http = require('http').Server(app);
 
-app.serveFilesFrom(__dirname + '/content');
 
-var window = app.createWindow({
-  width  : 640,
-  height : 460,
-  icons  : __dirname + '/content/icons'
+app.use(express.static('public'));
+
+//create a route
+app.get('/', function(req, res) {
+  res.sendfile('index.html');
 });
 
-window.on('create', function(){
-  console.log("Window Created");
-  window.frame.show();
-  window.frame.center();
-});
+var io = require('socket.io')(http);
 
-window.on('ready', function(){
-  console.log("Window Ready");
-  window.require = require;
-  window.process = process;
-  window.module = module;
-  window.addEventListener('keydown', function(e){
-    if (e.keyIdentifier === 'F12') {
-      window.frame.openDevTools();
-    }
-  });
-});
-
-window.on('close', function(){
-  console.log("Window Closed");
+http.listen(3000, function() {
+  console.log('listening on *:3000');
 });
