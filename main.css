@@ -82,36 +82,22 @@ input[type=search]:focus {
   padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
 
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #fff;
-   color: white;
-   text-align: center;
-   padding-left: 0px;
-   padding-right: 0px;
+footer {
+  position: fixed;
+  bottom: 0;
+  height:50px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: linear, ease-in;
 }
 
-.wrap {
-  width: 90%;
-  margin: 25px auto 150px;
-  -moz-transition: max-height 0.8s ease-in-out;
-  -o-transition: max-height 0.8s ease-in-out;
-  -webkit-transition: max-height 0.8s ease-in-out;
-  transition: max-height 0.8s ease-in-out;
+footer:hover{
+  height: 130px;
 }
-footer .wrap {
-  overflow: hidden;
-  margin: 25px auto;
-  max-height: 50px;
-}
-footer .wrap.active {
-  overflow: scroll;
-  max-height: 200px;
-}
-
 
 .bluetext{
   color:blue;
