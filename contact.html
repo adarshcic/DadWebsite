@@ -10,56 +10,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="sticky-footer.css" rel="stylesheet">
   <script src="jquery.js"></script>
-  <script type="text/javascript" src="smoothscroll.js"></script>
-  <link rel="icon" href="translogo.png">
+  <link rel="icon" href="./Images/translogo.png">
+  <!--<script src="navbar.js"></script>-->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color:#ffffff">
-
-  <header style="margin-bottom:-10px; background-color:#f3f4f5;padding-top:10px;padding-bottom:10px;">
-  <h1 align="center">Deep Dive Consulting</h1>
-  <p align="center">Experts in Project Controls, Commercial Management and Financial Analysis</p>
-</header>
-
-<div class="nav-wrapper-cont">
-<div id="mynav"class="nav navbar-fixed" style="background-color: #fff; margin-bottom:-100px; padding-top:10px; padding-left:150px;padding-right:150px;" data-spy="affix" data-offset-top="110">
-  <div class="row row-no-padding" style="margin-bottom:-50px">
-    <div class="col-xs-5" style="margin-bottom:-60px">
-      <a href="index.html" style="padding-left:20px;"><img src="translogo.png" alt="BMCL" width="140" height="100"></a>
-      <p id="myP">A 360&deg; business review</p>
-    </div>
-  </div>
-
-
-  <div class="row row-no-padding" style="margin-top:-80px; margin-bottom:-50px">
-      <div align="right">
-      <nav class="navbar navbar-default" style="background-color:#ffffff;">
-        <div class="container-fluid">
-
-          <ul class="nav navbar-nav navbar-right" style="margin-bottom:-50px;background-color:#fff">
-            <li class="highlight"><a href="#about" class="smoothScroll">About</a></li>
-            <li class="highlight"><a href="#approach" class="smoothScroll">Approach</a></li>
-            <li class="highlight"><a href="#services" class="smoothScroll">Services</a></li>
-            <li class="highlight"><a href="#projects" class="smoothScroll">Projects</a></li>
-            <li class="highlight"><a href="#clients" class="smoothScroll">Clients</a></li>
-            <li class="highlight"><a href="#contact" class="smoothScroll">More Info</a></li>
-            <li class="highlight"> <a href="#"> <img src="thickicon.png" alt="Search" width="24px" height="24px" onclick="unhide()"> </a> </li>
-          </ul>
-        </div>
-      </nav>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12" style="margin-top:-20px;">
-      <div id="open" align="right" style="padding-right:20px; display:none;">
-      <form>
-        <input type="search" name="search" placeholder="Search.."></input>
-      </form>
-      </div>
-    </div>
-    </div>
-</div>
-</div>
+  <script src="title.js"></script>
+  <script src="navbar-cont.js"></script>
 
 <br><br>
 <div class="container">
@@ -122,74 +78,17 @@
 
 </div>
 
-<br>
-<br>
+<br><br>
 
-
-
+//google maps
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUie-B4bsc1vJiTUv050kHI5J5KxCGSxE&callback=initMap">
 </script>
 
-    <br><br><br><br>
-<br>
-<br>
-<footer class="footer" style="padding-top:10px;visibility:hidden;" id="myfooter" >
-  <div id="footer">
-  <div style="width: 100%; height: 27px; border-bottom: 1px solid black; text-align: left">
-    <div class="row row">
-    <div class="col-xs-6" style="padding-left:15%;">
-      <span class="text-muted" style="font-size: 41px; background-color: #FFF; padding-left: 10px">
-        CONNECT
-      </span>
-      <span class="text-muted" style="font-size: 27px; background-color: #FFF;">
-        WITH
-      </span>
-      <span class="text-muted" style="font-size: 41px; background-color: #FFF; padding-right: 10px;">
-        US
-      </span>
-      </div>
-      <div class="col-xs-2">
-      </div>
+<br><br><br><br><br><br>
 
-      <div class="col-xs-1" style="padding-left:0%">
-      <span>
-        <a href="https://www.facebook.com" target="_blank">
-        <div id="fbchange" style="background-color:#fff;padding-left:10px;padding-right:10px;"></div>
-      </a>
-      </span>
-      </div>
-
-      <div class="col-xs-1" style="padding-left:0%">
-        <span>
-          <a href="https://www.twitter.com" target="_blank">
-          <div id="twitterchange" style="background-color: #FFF;padding-left:10px;padding-right:10px;" ></div>
-        </a>
-        </span>
-      </div>
-      <div class="col-xs-1" style="padding-left:0%">
-        <span>
-          <a href="https://www.linkedin.com" target="_blank">
-          <div id="linkedchange" style="background-color: #FFF;padding-left:10px;padding-right:10px;" ></div>
-        </a>
-        </span>
-      </div>
-    </div>
-  </div>
-    <br>
-  <div class="col-xs-12" style="background-color:#fff;min-height:100px">
-    <p style="padding-left:10px" class="text-muted" align="left">CONTACT US
-T: +44 (0)7909674277 <br>
-pra<a class="bluetext">deep</a>@deepdiveconsulting.co.uk</p>
-<hr style="">
-<div class="text-muted" align="left" style="padding-left:5px;margin:0px;">
-&copy 2017 IBM, Hursley  - All rights reserved.
-</div>
-  </div>
-</div>
-</footer>
-
-
+//the footer
+<script src="footer.js"></script>
 
 </body>
 </html>

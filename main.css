@@ -168,41 +168,50 @@ textarea{
 
 hr{
   color: black;
+
   margin: 0px;
 }
 
 #fbchange{
-  background-image: url('fb_grey.png');
+  background-image: url('./Images/fb_grey.png');
   background-size: 48px 48px;
   width: 48px;
   height:48px;
 }
 
 #fbchange:hover{
-  background-image: url('fb_blue.png');
+  background-image: url('./Images/fb_blue.png');
   background-size: 48px 48px;
 }
 
 #twitterchange{
-  background-image: url('twitter_grey.png');
+  background-image: url('./Images/twitter_grey.png');
   background-size: 48px 48px;
   width: 48px;
   height:48px;
 }
 
 #twitterchange:hover{
-  background-image: url('twitter_blue.png');
+  background-image: url('./Images/twitter_blue.png');
   background-size: 48px 48px;
 }
 
 #linkedchange{
-  background-image: url('linked_grey.png');
+  background-image: url('./Images/linked_grey.png');
   background-size: 48px 48px;
   width: 48px;
   height:48px;
 }
 
 #linkedchange:hover{
-  background-image: url('linked_blue.png');
+  background-image: url('./Images/linked_blue.png');
   background-size: 48px 48px;
+}
+
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 50px;
+    text-align: center;
 }

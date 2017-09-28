@@ -13,56 +13,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <link href="sticky-footer.css" rel="stylesheet">
   <script src="jquery.js"></script>
-  <script type="text/javascript" src="smoothscroll.js"></script>
-  <link rel="icon" href="translogo.png">
+  <link rel="icon" href="./Images/translogo.png">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color:#ffffff">
-
-  <header style="margin-bottom:-10px; background-color:#fff;padding-top:10px;padding-bottom:10px;">
-  <h1 align="center">Deep Dive Consulting</h1>
-  <p align="center">Experts in Project Controls, Commercial Management and Financial Analysis</p>
-</header>
-
-<div class="nav-wrapper">
-<div id="mynav"class="nav navbar-fixed" style="background-color: #fff; margin-bottom:-100px; padding-top:10px; padding-left:150px;padding-right:150px;padding-bottom:5px;" data-spy="affix" data-offset-top="110">
-  <div class="row row-no-padding" style="margin-bottom:-50px">
-    <div class="col-xs-5" style="margin-bottom:-60px">
-      <a href="index.html" style="padding-left:20px;"><img src="translogo.png" alt="BMCL" width="140" height="100"></a>
-      <p id="myP">A 360&deg; business review</p>
-    </div>
-  </div>
-
-
-  <div class="row row-no-padding" style="margin-top:-80px; margin-bottom:-50px">
-      <div align="right">
-      <nav class="navbar navbar-default" style="background-color:#ffffff;">
-        <div class="container-fluid">
-
-          <ul class="nav navbar-nav navbar-right" style="margin-bottom:-50px;background-color:#fff">
-            <li class="highlight"><a href="#about" class="smoothScroll">About</a></li>
-            <li class="highlight"><a href="#approach" class="smoothScroll">Approach</a></li>
-            <li class="highlight"><a href="#services" class="smoothScroll">Services</a></li>
-            <li class="highlight"><a href="#projects" class="smoothScroll">Projects</a></li>
-            <li class="highlight"><a href="#clients" class="smoothScroll">Clients</a></li>
-            <li class="highlight"><a href="#contact" class="smoothScroll">More Info</a></li>
-            <li class="highlight"> <a href="#"> <img src="thickicon.png" alt="Search" width="24px" height="24px" onclick="unhide()"> </a> </li>
-          </ul>
-        </div>
-      </nav>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12" style="margin-top:-20px;">
-      <div id="open" align="right" style="padding-right:20px; display:none;">
-      <form>
-        <input type="search" name="search" placeholder="Search.."></input>
-      </form>
-      </div>
-    </div>
-    </div>
-</div>
-</div>
+  <script src="title.js"></script>
+  <script src="navbar-home.js"></script>
 
   <div class="container-fluid" style="padding-bottom:60px;padding-top:100px;">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -76,7 +31,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="tie.jpeg" alt="Los Angeles" style="width:100%;">
+        <img src="./Images/tie.jpeg" alt="Los Angeles" style="width:100%;">
         <div class="carousel-caption">
           <h3>Integrity is our name</h3>
           <p></p>
@@ -84,7 +39,7 @@
       </div>
 
       <div class="item">
-        <img src="handwrite.jpeg" alt="Chicago" style="width:100%;">
+        <img src="./Images/handwrite.jpeg" alt="Chicago" style="width:100%;">
         <div class="carousel-caption">
           <h3>A 360&deg; business review</h3>
           <p></p>
@@ -92,7 +47,7 @@
       </div>
 
       <div class="item">
-        <img src="pen.jpeg" alt="New york" style="width:100%;">
+        <img src="./Images/pen.jpeg" alt="New york" style="width:100%;">
         <div class="carousel-caption">
           <h3>No stone will be left unturned</h3>
           <p></p>
@@ -156,11 +111,11 @@
   <div class="jumbotron">
     <h1>Clients</h1>
     <p>Our clients include: <br>
-      <a><img src="pwc.png" width="20%" ></a>
-      <a><img src="sellafield.png" width="20%"></a>
-      <a><img src="ACI.png" height="20%" ></a>
-      <a><img src="ciel.png" width="15%" ></a>
-      <a><img src="magnox.png" width="20%"></a>
+      <a><img src="./Images/pwc.png" width="20%" ></a>
+      <a><img src="./Images/sellafield.png" width="20%"></a>
+      <a><img src="./Images/ACI.png" height="20%" ></a>
+      <a><img src="./Images/ciel.png" width="15%" ></a>
+      <a><img src="./Images/magnox.png" width="20%"></a>
     </p>
   </div>
 </div>
@@ -178,60 +133,7 @@
 <br>
 <br>
 
-<footer class="footer" style="padding-top:10px;visibility:hidden;" id="myfooter" >
-  <div id="footer">
-  <div style="width: 100%; height: 27px; border-bottom: 1px solid black; text-align: left">
-    <div class="row row">
-    <div class="col-xs-6" style="padding-left:15%;">
-      <span class="text-muted" style="font-size: 41px; background-color: #FFF; padding-left: 10px">
-        CONNECT
-      </span>
-      <span class="text-muted" style="font-size: 27px; background-color: #FFF;">
-        WITH
-      </span>
-      <span class="text-muted" style="font-size: 41px; background-color: #FFF; padding-right: 10px;">
-        US
-      </span>
-      </div>
-      <div class="col-xs-2">
-      </div>
-
-      <div class="col-xs-1" style="padding-left:0%">
-      <span>
-        <a href="https://www.facebook.com" target="_blank">
-        <div id="fbchange" style="background-color:#fff;padding-left:10px;padding-right:10px;"></div>
-      </a>
-      </span>
-      </div>
-
-      <div class="col-xs-1" style="padding-left:0%">
-        <span>
-          <a href="https://www.twitter.com" target="_blank">
-          <div id="twitterchange" style="background-color: #FFF;padding-left:10px;padding-right:10px;" ></div>
-        </a>
-        </span>
-      </div>
-      <div class="col-xs-1" style="padding-left:0%">
-        <span>
-          <a href="https://www.linkedin.com" target="_blank">
-          <div id="linkedchange" style="background-color: #FFF;padding-left:10px;padding-right:10px;" ></div>
-        </a>
-        </span>
-      </div>
-    </div>
-  </div>
-    <br>
-  <div class="col-xs-12" style="background-color:#fff;min-height:100px">
-    <p style="padding-left:10px" class="text-muted" align="left">CONTACT US
-T: +44 (0)7909674277 <br>
-pra<a class="bluetext">deep</a>@deepdiveconsulting.co.uk</p>
-<hr style="">
-<div class="text-muted" align="left" style="padding-left:5px;margin:0px;">
-&copy 2017 IBM, Hursley  - All rights reserved.
-</div>
-  </div>
-</div>
-</footer>
+<script src="footer.js"></script>
 
 </body>
 </html>
