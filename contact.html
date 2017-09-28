@@ -67,33 +67,34 @@
 <h4 style="text-color:#000">ANY QUERIES? PLEASE SEND US A MESSAGE.</h4>
 <br>
 <h4 class="redtext">NAME:*</h4>
-<form style="padding-bottom:5px" action="cgi-bin/FormalMail.pl" method="post">
+<form method="post" action="mailsender.php">
+<div style="padding-bottom:5px" action="cgi-bin/FormalMail.pl" method="post">
   <input class="form-control" style="width:50%" type="text" placeholder="First Name"/ >
-</form>
-<form style="padding-bottom:5px">
+</div>
+<div style="padding-bottom:5px">
   <input class="form-control" style="width:50%" type="text" placeholder="Last Name">
-</form>
+</div>
 <h4 class="redtext" style="padding-top:15px">EMAIL:*</h4>
-<form style="padding-bottom:5px">
+<div style="padding-bottom:5px">
   <input class="form-control" style="width:70%" type="text" placeholder="example@domain.com">
   <input type="hidden" name="recipient" value=" lekhprakash.bhagawan-cic-uk@ibm.com, lekhprakash.bhagawan-cic-uk@ibm.com" / >
-</form>
+</div>
 <h4 class="redtext" style="padding-top:15px">SUBJECT:*</h4>
-<form style="padding-bottom:5px">
+<div style="padding-bottom:5px">
   <input class="form-control" style="width:70%" type="text" placeholder="Enter the subject here...">
-</form>
+</div>
 
 <h4 class="redtext" style="padding-top:15px">MESSAGE:*</h4>
 
-<form style="padding-bottom:5px">
+<div style="padding-bottom:5px">
   <textarea class="form-control" rows="5" id="comment" placeholder="Enter the message in this box..."></textarea>
-</form>
-  <div style="padding-top:5px">
-    <form action="contact.html">
-        <input class="btn btn-primary" type="submit" value="Submit" />
-    </form>
-  </div>
 </div>
+  <div style="padding-top:5px">
+        <input class="btn btn-primary" type="submit" value="Submit" />
+  </div>
+</form>
+</div>
+
 
 <div class="col-xs-6">
   <h4 style="text-color:#000">WHERE TO FIND US:</h4><br>
