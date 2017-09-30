@@ -147,7 +147,7 @@ textarea{
 }
 .nav-wrapper
 {
-    min-height:50px;
+    min-height:15px;
 }
 .carousel{
 }
@@ -214,4 +214,9 @@ hr{
     display: none;
     padding: 50px;
     text-align: center;
+}
+
+.logo{
+  height:100px;
+  width:140px;
 }
