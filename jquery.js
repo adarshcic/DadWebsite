@@ -1,3 +1,15 @@
+startPopUp = function(){
+  window.location.href='#popup1';
+}
+
+$(document).mouseup(function (e) {
+     var popup = $("#popupclose");
+     if (!closed && !popup.is(e.target) && popup.has(e.target).length == 0) {
+         window.location.href='#closePopUp';
+         $(document).unbind('mouseup');
+     }
+ });
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -89,7 +101,7 @@ logoSize = function () {
         }
         lastScrollTop = st;
 
-        if(curSize<17 && curSize>4){
+        if(curSize<12 && curSize>8){
         $('#myP').css({"font-size" : curSize+"px"});
       }
 

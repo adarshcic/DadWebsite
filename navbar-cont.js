@@ -15,7 +15,7 @@ document.write('\
         <div class="container-fluid">\
 \
           <ul class="nav navbar-nav navbar-right" style="margin-bottom:-50px;background-color:#fff">\
-            <li class="highlight"><a href="#about" >About</a></li>\
+            <li class="highlight"><a href="about.html" >About</a></li>\
             <li class="highlight"><a href="#approach">Approach</a></li>\
             <li class="highlight"><a href="#services">Services</a></li>\
             <li class="highlight"><a href="#projects">Projects</a></li>\
