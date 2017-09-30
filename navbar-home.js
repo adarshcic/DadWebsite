@@ -23,7 +23,7 @@ document.write('\
             <li class="highlight"><a href="#projects">Projects</a></li>\
             <li class="highlight"><a href="#clients">Clients</a></li>\
             <li class="highlight"><a href="#contact">More Info</a></li>\
-            <li class="highlight"> <a href="#"> <img src="./Images/thickicon.png" alt="Search" width="24px" height="24px" onclick="unhide()"> </a> </li>\
+            <li class="highlight"> <a> <img src="./Images/thickicon.png" alt="Search" width="24px" height="24px" onclick="unhide()"> </a> </li>\
           </ul>\
         </div>\
       </nav>\
