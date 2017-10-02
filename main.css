@@ -20,6 +20,10 @@ background-color: #ffffff;
     color: black;
 }
 
+.myClickable {
+    cursor: pointer;
+}
+
 /* Add a color to the active/current link */
 .mainNav a.active {
     background-color: #4CAF50;
@@ -263,7 +267,7 @@ hr{
   background: #fff;
   border-radius: 5px;
   width: 30%;
-  height: 50%;
+  height: 60%;
   position: relative;
   transition: all 5s ease-in-out;
 }
